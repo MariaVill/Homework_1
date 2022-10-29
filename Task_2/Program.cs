@@ -1,15 +1,16 @@
-﻿// Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-int a = 22, b = 3, c = 9, max = a;
-if(b > max)
+﻿// Напишите программу, которая принимает на вход три числа и
+// выдаёт максимальное из этих чисел.
+Console.WriteLine("Hi, please enter three numbers:");
+int numberA = Int32.Parse(Console.ReadLine());
+int numberB = Int32.Parse(Console.ReadLine());
+int numberC = Int32.Parse(Console.ReadLine());
+int  max = numberA;
+if(numberB > max)
 {
-    max = b;
+    max = numberB;
 }
-if(c > max)
+if(numberC > max)
 {
-    max = c;
+    max = numberC;
 }
-else
-{
-    max = a;
-}
-Console.WriteLine(max);
+Console.WriteLine($" {max} is the maximum number");
